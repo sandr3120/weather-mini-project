@@ -1,7 +1,7 @@
 import requests
 
 try:
-    response = requests.get("https://api.openweathermap.org/data/2.5/weather?units=metric&lat=35.652832&lon=139.839478&appid=32ae82928f40d0b1d7f12054061f3945")   
+    response = requests.get("https://api.openweathermap.org/data/2.5/weather?units=metric&lat=35.652832&lon=139.839478&appid={key}")   
 
 except(requests.exceptions.ConnectionError): 
     print("You're offline. Check your connection.")
